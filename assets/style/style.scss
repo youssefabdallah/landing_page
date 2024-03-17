@@ -1,0 +1,91 @@
+@font-face {
+    font-family: source-sans-pro-regular;
+    src: url('../fonts/source-sans-pro.regular.ttf');
+}
+@font-face {
+    font-family: source-sans-pro-black;
+    src: url('../fonts/source-sans-pro.black.ttf');
+}
+@font-face {
+    font-family: source-sans-pro-bold;
+    src: url('../fonts/source-sans-pro.bold.ttf');
+}
+@font-face {
+    font-family: source-sans-pro-semi-bold;
+    src: url('../fonts/source-sans-pro.semibold.ttf');
+}
+@font-face {
+    font-family: source-sans-pro-semi-light;
+    src: url('../fonts/source-sans-pro.light.ttf');
+}
+
+$primary: #FD5545;
+$gray-1: #4D4D4D;
+$gray-2: #333333;
+$gray-3: #DDDDDD;
+$gray-4: #8B8B8B;
+$white: #ffffff;
+$black: #000000;
+
+.light {
+    font-family: 'source-sans-pro-light';
+}
+.bold {
+    font-family: 'source-sans-pro-bold';
+}
+.regular {
+    font-family: 'source-sans-pro-regular';
+}
+.black {
+    font-family: 'source-sans-pro-black';
+}
+.semibold {
+    font-family: 'source-sans-pro-semi-bold';
+}
+
+// Apply text color classes
+.txt-white {
+    color: $white !important;
+}
+.txt-black {
+    color: $black !important;
+}
+.txt-primary {
+    color: $primary;
+}
+.txt-dark {
+    color: $gray-2;
+}
+.txt-light {
+    color: $gray-4;
+}
+
+// Apply font size classes
+.h1 {
+    font-size: 72px !important;
+}
+.h2 {
+    font-size: 56px !important;
+}
+.h3 {
+    font-size: 40px !important;
+    margin-bottom: 25px;
+}
+.h4 {
+    font-size: 24px;
+}
+.fs-1 {
+    font-size: 12px !important;
+}
+.fs-2 {
+    font-size: 14px !important;
+}
+.fs-3 {
+    font-size: 16px !important;
+}
+.fs-4 {
+    font-size: 18px !important;
+}
+.fs-6 {
+    font-size: 20px !important;
+}

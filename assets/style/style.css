@@ -1,0 +1,432 @@
+@font-face {
+    font-family: source-sans-pro-regular;
+    src: url('../fonts/source-sans-pro.regular.ttf');
+}
+@font-face {
+    font-family: source-sans-pro-black;
+    src: url('../fonts/source-sans-pro.black.ttf');
+}
+@font-face {
+    font-family: source-sans-pro-bold;
+    src: url('../fonts/source-sans-pro.bold.ttf');
+}
+@font-face {
+    font-family: source-sans-pro-semi-bold;
+    src: url('../fonts/source-sans-pro.semibold.ttf');
+}
+@font-face {
+    font-family: source-sans-pro-semi-light;
+    src: url('../fonts/source-sans-pro.light.ttf');
+}
+
+:root {
+    --primary: #FD5545;
+    --gray-1: #4D4D4D;
+    --gray-2: #333333;
+    --gray-3: #DDDDDD;
+    --gray-4: #8B8B8B;
+    --white: #ffffff;
+    --black: #000000;
+}
+
+.light{
+    font-family: 'source-sans-pro-light';
+}
+.bold{
+    font-family: 'source-sans-pro-bold';
+}
+.regular{
+    font-family: 'source-sans-pro-regular';
+}
+.black{
+    font-family: 'source-sans-pro-black';
+}
+.semibold{
+    font-family: 'source-sans-pro-semi-bold';
+}
+.txt-white{
+    color: var(--white) !important;
+}
+.txt-black{
+    color: var(--black) !important;
+}
+.txt-primary{
+    color: var(--primary);
+}
+.txt-dark{
+    color: var(--gray-2);
+}
+.txt-light{
+    color: var(--gray-4)
+}
+.h1{
+    font-size: 72px !important;
+}
+.h2{
+    font-size: 56px !important;
+}
+.h3{
+    font-size: 40px !important;
+    margin-bottom: 25px;
+}
+.h4{
+    font-size: 24px;
+}
+.fs-1{
+    font-size: 12px !important;
+}
+.fs-2{
+    font-size: 14px !important;
+}
+.fs-3{
+    font-size: 16px !important;
+}
+.fs-4{
+    font-size: 18px !important;
+}
+.fs-6{
+    font-size: 20px !important;
+}
+a.unstyled{
+    text-decoration: none !important;
+}
+.max-content{
+    width: max-content;
+}
+.flex-1{
+    flex: 1;
+}
+.button{
+    width: 170px;
+    height: 48px;
+    padding: 0px;
+    background: var(--white);
+    color: var(--primary);
+    font-weight: bold;
+    font-size: 16px;
+}
+.button:hover{
+    border: none;
+    background-color: var(--primary) !important;
+    border-radius: 25px;
+    color: var(--white);
+    transition: all 0.3s ease;
+}
+.border-light{
+    border: solid 1px var(--gray-3) !important;
+}
+.uppercase{
+    text-transform: uppercase;
+}
+.list-style-none{
+    list-style: none;
+}
+.inline-block{
+    display: inline-block;
+}
+body{
+    font-family: 'source-sans-pro-regular';
+}
+
+section.header{
+    background: url('../img/Background@2x.png')no-repeat top center;
+    background-size: cover;
+    height: 800px;
+}
+
+section.header nav.navbar{
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    z-index: 9999;
+    transition: all 0.5s ease;
+}
+section.header nav.navbar.transparent{
+    background: transparent;
+}
+section.header nav.navbar.scrolled{
+    background: var(--primary);
+}
+.logo{
+    font-family: 'source-sans-pro-semi-bold' !important;
+    text-transform: uppercase;
+    font-size: 40px;
+    margin: 0px 0px 0px 30px
+}
+nav .navbar-nav{
+    margin-left: 15px;
+}
+nav .navbar-nav .nav-item{
+    font-size: 16px;
+    text-align: left;
+    margin: 0 10px;
+}
+nav .navbar-nav .nav-item a{
+    color: #fff !important;
+}
+.nav-icon{
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+section.header .content{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    left: 0;
+    right: 0;
+    justify-content: center;
+}
+.mt-default{
+    margin-top: 116px;
+}
+.mb-default{
+    margin-bottom: 116px;
+}
+.mb-15{
+    margin-bottom: 15px;
+}
+.mb-25{
+    margin-bottom: 25px;
+}
+.mb-35{
+    margin-bottom: 35px;
+}
+.mb-45{
+    margin-bottom: 45px;
+}
+.custom-card-1, .custom-card-2{
+    padding: 0 15px !important;
+}
+.custom-card-1 .card{
+    width: 370px;
+    height: 320px;
+    border-radius: 0;
+    border: solid 1px var(--gray-3);
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.custom-card-1 .card:hover{
+    background: var(--primary) !important;
+    color: white;
+}
+.custom-card-1 .card:hover .txt-primary{
+    color: var(--white) !important;
+}
+.custom-card-1 .card .card-body{
+    padding: 50px 35px;
+}
+.custom-card-2 .card{
+    width: 270px;
+    height: 432px;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: all 0.5s ease;
+}
+.custom-card-2 .card:hover{
+    background: var(--primary) !important;
+}
+.custom-card-2 .card:hover img,
+.custom-card-1 .card:hover img{
+    background: #fff;
+    padding: 0px;
+    border-radius: 20%;
+    transition: all 0.65s;
+    transform: rotateY(360deg);
+}
+.custom-card-2 .card-body{
+    padding: 90px 30px;
+}
+.carousel-indicators{
+    margin-bottom: 0;
+}
+.carousel-indicators [data-bs-target]{
+    border-radius: 50%;
+    background: var(--gray-4);
+    width: 21px;
+    height: 21px;
+    margin: 5px;
+    border-bottom: none;
+    border-top:  none;
+    opacity: 1;
+}
+.carousel-indicators [data-bs-target].active{
+    background: var(--primary) !important;
+}
+#owCarousel .carousel-inner img:hover{
+    opacity: 0.8;
+    transition: all 0.65s;
+    transform: rotateY(180deg);
+}
+#owCarousel .carousel-inner, 
+#testimonials-carousel .carousel-inner{
+    padding-bottom: 4rem;
+}
+section#dream-team{
+    background: var(--gray-1);
+    padding: 125px 0px 90px 0px;
+}
+section#dream-team .team-member{
+    height: 288px;
+    width: 288px;
+    background-size: cover !important;
+    overflow: hidden;
+    position: relative;
+}
+section#dream-team .team-member:hover .links{
+    bottom: 0 !important;
+}
+section#dream-team .team-member .links{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(253, 85, 69, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: -288px;
+    transition: bottom 0.3s ease;
+}
+section#testimonials{
+    background: var(--gray-2);
+    padding: 85px 0px 50px 0px;
+}
+#testimonials-carousel .carousel-item .inner{
+    position: relative;
+}
+#testimonials-carousel .carousel-item .caption{
+    width: 340px;
+    background: var(--primary);
+    padding: 35px 20px;
+    position: absolute;
+    top: 92px;
+    left: -170px;
+}
+.news-card{
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    height: 410px;
+    width: auto;
+}
+.news-card .caption{
+    width: 500px;
+    padding: 20px;
+    border: solid 1px var(--gray-3);
+    position: absolute;
+    background: var(--white);
+    bottom: 0px;
+    height: 112px;
+}
+section#buy-now .jumbotron{
+    background: var(--primary);
+    padding: 80px 35px;
+    text-align: center;
+}
+.footer-1{
+    padding: 20px 0px;
+}
+.footer-2{
+    display: flex;
+    justify-content: space-between;
+}
+/* screen 768 px */
+@media screen and (max-width: 768px) {
+    .h1{
+        font-size: 56px !important;
+    }
+    .h2{
+        font-size: 40px !important;
+    }
+    .h3{
+        font-size: 24px !important;
+        margin-bottom: 25px;
+    }
+    .h4{
+        font-size: 20px;
+    }
+    .custom-card-1 .card{
+        width: 100% !important;
+    }
+
+    /* menu */
+    li.nav-item.search::before {
+        content: 'search';
+        font-size: 20px;
+        font-weight: 600;
+        color: var(--white);
+    }
+    li.nav-item.cart::before {
+        content: 'cart';
+        font-size: 20px;
+        font-weight: 600;
+        color: var(--white);
+    }
+    .navbar-nav{
+        align-items: start !important;
+    }
+    .nav-item .nav-link{
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    /* news card  */
+    .news-card{
+        height: 100%;
+        margin-bottom: 15vh;
+    }
+    .news-card .img img{
+        width: 100%;
+    }
+    .news-card .caption{
+        width: 80%;
+        top: 75%;
+    }
+
+    /* testimonials */
+    #testimonials-carousel .carousel-item .caption{
+        width: 100%;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        height: 100%;
+        padding: 15px;
+        background: rgba(253, 85, 69, 0.8);
+    }
+
+    #testimonials-carousel .carousel-item img{
+        width: 100%;
+    }
+
+    /* our team */
+    #dream-team .team-holder{
+        flex-direction: column;
+        align-items: center;
+    }
+    #dream-team .team-holder .team-member{
+        flex: none;
+    }
+
+    /* footer */
+    .footer-2{
+        flex-direction: column;
+        align-items: center;
+    }
+    #footer ul{
+        padding-left: 0;
+    }
+
+}
+@media (min-width: 1400px){
+    .container{
+        max-width: 1200px !important;
+    }
+}
